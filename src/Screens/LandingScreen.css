@@ -1,0 +1,108 @@
+
+
+
+.landingScreen {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   background: #f1f1f1;
+   overflow: hidden;
+   margin-left: auto;
+   margin-right: auto;
+   background-image: url('../assets/backgroundSkills.jpg');
+   background-size: cover;
+ }
+
+ .landingScreen__left {
+  
+ }
+
+ .landingScreen__right{
+
+ }
+ 
+ .landingScreen__right img {
+  width: 200px;
+ }
+ 
+ .landingScreen__perspective-text {
+   color: #ffffff;
+   font-family: Arial;
+   font-size: 58px;
+   font-weight: 900;
+   letter-spacing: -2px;
+   text-transform: uppercase;
+   margin-left: 5rem;
+
+ }
+ 
+ .landingScreen__perspective-line {
+   height: 50px;
+   overflow: hidden;
+   position: relative;
+ }
+ 
+ p {
+   margin: 0;
+   height: 50px;
+   line-height: 50px;
+   transition: all 0.5s ease-in-out;
+ }
+ 
+ .landingScreen__perspective-line:nth-child(odd) {
+   transform: skew(60deg, -30deg) scaleY(0.667);
+ }
+ 
+ .landingScreen__perspective-line:nth-child(even) {
+   transform: skew(0deg, -30deg) scaleY(1.337);
+ }
+ 
+
+ 
+ .landingScreen__perspective-line:nth-child(1) {
+   left: 29px;
+ }
+ 
+ .landingScreen__perspective-line:nth-child(2) {
+   left: 58px;
+   background: #ff442c;
+ }
+ 
+ .landingScreen__perspective-line:nth-child(3) {
+   left: 87px;
+   background: #20a9ff;
+ }
+ 
+ .landingScreen__perspective-line:nth-child(4) {
+   left: 116px;
+   background: #1fe6df;
+ }
+ 
+ .landingScreen__perspective-line:nth-child(5) {
+   left: 145px;
+ }
+ 
+ @keyframes skewTitle {
+    0% {}
+    50% {}
+    100% {transform: translate(0, -50px);}
+ }
+
+
+
+ .landingScreen__perspective-text p {
+    animation-name: skewTitle;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+ }
+
+  /* .perspective-text:hover p {
+   transform: translate(0, -50px);
+ } */
+
+

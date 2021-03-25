@@ -1,0 +1,6 @@
+.contactScreen {
+   height: 100vh;
+   background-image: url('../assets/backgroundContact.jpg');
+   background-size: cover;
+
+}
