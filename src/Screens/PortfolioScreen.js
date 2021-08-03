@@ -4,9 +4,7 @@ import PassivePerception from "../assets/PassivePerception.png";
 import Proshop from "../assets/ProShop.png";
 import DevConnector from "../assets/DevConnector.png";
 import Natour from "../assets/Natour.png";
-import Netflix from "../assets/Netflix.png";
-import CovidTracker from "../assets/covidTracker.png";
-import Blog from "../assets/Blog.png";
+// import CovidTracker from "../assets/covidTracker.png";
 
 const PortfolioScreen = () => {
   return (
@@ -27,7 +25,13 @@ const PortfolioScreen = () => {
       <div className="portfolio__cardContainer">
         <div className="portfolio__card">
           <img src={PassivePerception} alt="" />
-          <h4>Passive Perception</h4>
+          <a
+            href="https://passiveperception.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h4>Passive Perception</h4>
+          </a>
           <p>
             Own Project. Passive Perception is a tool for Dungeons and Dragons
             GMs, to help them run their campains with ease. Built with React,
@@ -36,36 +40,53 @@ const PortfolioScreen = () => {
         </div>
         <div className="portfolio__card">
           <img src={Proshop} alt="" />
-          <h4>ProShop</h4>
+          <a
+            href="https://proshop88.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h4>ProShop</h4>
+          </a>
           <p>
-            Full Stack E-Comerce app, React, Redux, BootStrap, Node, Express,
-            MongoDb
+            Full Stack E-Comerce app, Built with React, Redux, BootStrap, Node,
+            Express, MongoDb
           </p>
         </div>
         <div className="portfolio__card">
           <img src={DevConnector} alt="" />
-          <h4>DevConnector</h4>
+          <a
+            href="https://devconnector88.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h4>DevConnector</h4>
+          </a>
           <p>
-            Full Stack E-Comerce app, React, Redux, BootStrap, Node, Express,
-            MongoDb
+            Full Stack social media for developers app, Built with React, Redux,
+            BootStrap, Node, Express, MongoDb
           </p>
         </div>
         <div className="portfolio__card">
           <img src={Natour} alt="" />
           <h4>Natour - Nature Tours</h4>
           <p>
-            Full Stack E-Comerce app, React, Redux, BootStrap, Node, Express,
-            MongoDb
+            Nature Tour in a single page app built to develop my design skills
+            built with React and sass to develop my skill in design.
           </p>
         </div>
-        <div className="portfolio__card">
+        {/* <div className="portfolio__card">
           <img src={CovidTracker} alt="" />
-          <h4>CovidTracker</h4>
+          <a
+            href="https://covid-19-tracker-88fe0.web.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h4>CovidTracker</h4>
+          </a>
           <p>
-            Full Stack E-Comerce app, React, Redux, BootStrap, Node, Express,
-            MongoDb
+           App build with React, developed implementing 
           </p>
-        </div>
+        </div> */}
         {/* <div className="portfolio__card">
           <img src={Netflix} alt="" />
           <h4>Netflix Showcase</h4>

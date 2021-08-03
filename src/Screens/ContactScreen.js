@@ -1,9 +1,9 @@
 //Styles
 import "./ContactScreen.css";
 
-import PersonIcon from "@material-ui/icons/Person";
-import EmailIcon from "@material-ui/icons/Email";
-import CommentIcon from "@material-ui/icons/Comment";
+// import PersonIcon from "@material-ui/icons/Person";
+// import EmailIcon from "@material-ui/icons/Email";
+// import CommentIcon from "@material-ui/icons/Comment";
 
 const ContactScreen = () => {
   return (

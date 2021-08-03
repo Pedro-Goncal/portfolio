@@ -10,7 +10,6 @@ import Express from "../assets/express.png";
 import Node from "../assets/nodeLogo.png";
 import Sass from "../assets/sass.png";
 import ReactLogo from "../assets/react.png";
-import Bootstrap from "../assets/bootstrap-4.png";
 import Mongodb from "../assets/mongodb.png";
 
 import Profile from "../assets/profile.png";
