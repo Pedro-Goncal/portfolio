@@ -1,4 +1,6 @@
-
+.landingScreen__mobile {
+  display: none;
+}
 
 
 .landingScreen {
@@ -19,8 +21,19 @@
  }
 
  .landingScreen__right{
-
+  margin-left: 25rem;
  }
+
+ .MuiSvgIcon-root {
+  color: rgb(160, 160, 160);
+  font-size: 46px;
+  margin: 15px;
+  color: black;
+}
+
+.MuiSvgIcon-root:hover {
+  color: rgb(160, 160, 160);
+}
  
  .landingScreen__right img {
   width: 200px;
@@ -104,5 +117,69 @@
   /* .perspective-text:hover p {
    transform: translate(0, -50px);
  } */
+
+ .MuiIcon-root {
+   font-size: 10px;
+   color: orange;
+ }
+
+
+ @media (max-width: 990px ) {
+  .landingScreen__left {
+    display: none;
+  }
+ 
+  .landingScreen__right{
+    display: none;
+
+  }
+
+  .landingScreen__mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .landingScreen__mobile h1 {
+    font-size: 50px;
+    color: rgb(4, 4, 4);
+    letter-spacing: -2px;
+    margin: 0 auto 18px auto;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+  }
+
+  .landingScreen__mobile h3  {
+    text-align: center;
+    font-size: 16px;
+     color: rgb(0, 17, 255);
+     font-weight: 700;
+     text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+     margin: 20px;
+  }
+ }
+
+ @media (max-width: 470px) {
+  .landingScreen__mobile h1 {
+    font-size: 40px;
+  }
+
+  .landingScreen__mobile h3 {
+    font-size: 16px;
+  }
+
+ }
+
+ @media (max-width: 370px) {
+  .landingScreen__mobile h1 {
+    font-size: 30px;
+  }
+
+  .landingScreen__mobile h3 {
+    font-size: 15px;
+  }
+
+ }
 
 

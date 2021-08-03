@@ -1,13 +1,17 @@
 //Styles
 import "./PortfolioScreen.css";
-import Proshop from "../assets/proshop.png";
+import PassivePerception from "../assets/PassivePerception.png";
+import Proshop from "../assets/ProShop.png";
+import DevConnector from "../assets/DevConnector.png";
+import Natour from "../assets/Natour.png";
+import Netflix from "../assets/Netflix.png";
 import CovidTracker from "../assets/covidTracker.png";
-import Blog from "../assets/blog.png";
+import Blog from "../assets/Blog.png";
 
 const PortfolioScreen = () => {
   return (
     <div className="portfolioScreen" id="portfolio">
-      <div className="aboutScreen__title">
+      <div className="portfolioScreen__title">
         <div>
           <p className="popout2">
             <span className="span2">P</span>
@@ -20,59 +24,64 @@ const PortfolioScreen = () => {
           </p>
         </div>
       </div>
-      <div className="main">
-        <div className="view view-first">
-          <img src={Proshop} alt="" />
-          <div className="mask">
-            <h2>ProShop E-Commerce</h2>
-            <p>
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring which I enjoy with my whole heart.
-            </p>
-            <a href="/" className="info">
-              Read More
-            </a>
-          </div>
+      <div className="portfolio__cardContainer">
+        <div className="portfolio__card">
+          <img src={PassivePerception} alt="" />
+          <h4>Passive Perception</h4>
+          <p>
+            Own Project. Passive Perception is a tool for Dungeons and Dragons
+            GMs, to help them run their campains with ease. Built with React,
+            Redux, Node, Express and MongoDB
+          </p>
         </div>
-        <div className="view view-first">
+        <div className="portfolio__card">
           <img src={Proshop} alt="" />
-          <div className="mask">
-            <h2>Hover Style #1</h2>
-            <p>
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring which I enjoy with my whole heart.
-            </p>
-            <a href="/" className="info">
-              Read More
-            </a>
-          </div>
+          <h4>ProShop</h4>
+          <p>
+            Full Stack E-Comerce app, React, Redux, BootStrap, Node, Express,
+            MongoDb
+          </p>
         </div>
-        <div className="view view-first">
+        <div className="portfolio__card">
+          <img src={DevConnector} alt="" />
+          <h4>DevConnector</h4>
+          <p>
+            Full Stack E-Comerce app, React, Redux, BootStrap, Node, Express,
+            MongoDb
+          </p>
+        </div>
+        <div className="portfolio__card">
+          <img src={Natour} alt="" />
+          <h4>Natour - Nature Tours</h4>
+          <p>
+            Full Stack E-Comerce app, React, Redux, BootStrap, Node, Express,
+            MongoDb
+          </p>
+        </div>
+        <div className="portfolio__card">
           <img src={CovidTracker} alt="" />
-          <div className="mask">
-            <h2>Covid Tracker</h2>
-            <p>
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring which I enjoy with my whole heart.
-            </p>
-            <a href="/" className="info">
-              Read More
-            </a>
-          </div>
+          <h4>CovidTracker</h4>
+          <p>
+            Full Stack E-Comerce app, React, Redux, BootStrap, Node, Express,
+            MongoDb
+          </p>
         </div>
-        <div className="view view-first">
+        {/* <div className="portfolio__card">
+          <img src={Netflix} alt="" />
+          <h4>Netflix Showcase</h4>
+          <p>
+            Full Stack E-Comerce app, React, Redux, BootStrap, Node, Express,
+            MongoDb
+          </p>
+        </div>
+        <div className="portfolio__card">
           <img src={Blog} alt="" />
-          <div className="mask">
-            <h2>Vanila JS Blog</h2>
-            <p>
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring which I enjoy with my whole heart.
-            </p>
-            <a href="/" className="info">
-              Read More
-            </a>
-          </div>
-        </div>
+          <h4>Vanila Blog</h4>
+          <p>
+            Full Stack E-Comerce app, React, Redux, BootStrap, Node, Express,
+            MongoDb
+          </p>
+        </div> */}
       </div>
     </div>
   );

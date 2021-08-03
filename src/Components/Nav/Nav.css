@@ -1,11 +1,10 @@
 a {
    text-decoration:none;
-   color: rgb(58, 58, 58);
+   color: #3a3a3a;
 }
 
 a:hover {
-   color: rgb(185, 185, 185);
-   font-weight: bold;
+   color: rgb(145, 145, 145);
 }
 
 ul {
