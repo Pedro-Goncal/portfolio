@@ -1,117 +1,24 @@
+import { useState } from 'react';
+
+//Styles
 import './LandingScreen.css';
+
+//Router
+import { Link } from 'react-router-dom';
 
 //Framer Motion
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import {
+  containerVariants,
+  imageVariants,
+  colorBlockVariants,
+  svgVariantsTitle,
+  svgVariantsSubTitle,
+  svgVariantsArrow,
+  arrowPathVariants,
+} from '../framerMotionVariants/framerMotionVariants';
 
-//===================
-//CONTAINER VARIANTS
-//===================
-const containerVariants = {
-  initial: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: { duration: 1, when: 'beforeChildren' },
-  },
-  exit: {
-    x: '-100vw',
-    transition: { ease: 'easeInOut' },
-  },
-};
-
-//=================
-// IMAGE VARIANTS
-//=================
-const imageVariants = {
-  initial: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: { duration: 2.5 },
-  },
-};
-
-//=======================
-//COLOR BLOCK VARIANTS
-//=======================
-const colorBlockVariants = {
-  initial: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: { duration: 3 },
-  },
-};
-
-//=================
-//PATH VARIANTS
-//================
-//TITLE
-const svgVariantsTitle = {
-  initial: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { duration: 4 },
-  },
-};
-
-// const titlePathVariants = {
-//   initial: {
-//     opacity: 1,
-//     pathLength: 0,
-//   },
-//   visible: {
-//     opacity: 1,
-//     pathLength: 1,
-//     transition: { duration: 15, ease: 'easeInOut' },
-//   },
-// };
-
-//SUB TITLE
-const svgVariantsSubTitle = {
-  initial: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { duration: 3, delay: 2.5 },
-  },
-};
-
-// const SubTitlePathVariants = {
-//   initial: {
-//     opacity: 1,
-//     pathLength: 0,
-//   },
-//   visible: {
-//     opacity: 1,
-//     pathLength: 1,
-//     transition: { duration: 15, ease: 'easeInOut', delay: 2.5 },
-//   },
-// };
-
-//ARROWS NEED
-// const svgVariantsArrow = {
-//   initial: { opacity: 0 },
-//   visible: {
-//     opacity: 1,
-//     transition: { duration: 5, delay: 7.5 },
-//   },
-// };
-
-// const arrowPathVariants = {
-//   initial: {
-//     opacity: 1,
-//     pathLength: 0,
-//   },
-//   visible: {
-//     opacity: 1,
-//     pathLength: 1,
-//     transition: { duration: 15, ease: 'easeInOut' },
-//   },
-// };
+//Background changing variable
 const backgroundImageClass = [
   '--backgroundImageChoise1',
   '--backgroundImageChoise2',
@@ -135,6 +42,7 @@ const LandingScreen = () => {
       exit="exit"
       className="landingScreen"
     >
+      {/* COLOUR BLOCK */}
       <motion.div
         variants={colorBlockVariants}
         initial="initial"
@@ -142,14 +50,17 @@ const LandingScreen = () => {
         className="landingScreen__colorBlock"
       ></motion.div>
 
+      {/* MAIN COTAINER */}
       <div className="landingScreen__mainContainer">
-        {/* PROFILE IMAGE */}
+        {/* PROFILE PICTURE CONTAINER */}
         <motion.div
           variants={imageVariants}
           initial="initial"
           animate="visible"
           className="landingScreen__imageContainer"
         ></motion.div>
+
+        {/* TITLE CONTAINER */}
         <div className="landingScreen__titleContainer">
           <div className="landingScreen_titleWraper" onClick={changeBackground}>
             <motion.h1 className={`landingScreen__titleH1 ${backgroundImage}`}>
@@ -224,6 +135,7 @@ const LandingScreen = () => {
             </div>
           </div> */}
         </div>
+
         {/* ICONS CONTAINER */}
         <div className="landingPage__iconsContainer">
           <motion.a
