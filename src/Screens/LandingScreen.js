@@ -4,7 +4,7 @@ import { useState } from 'react';
 import './LandingScreen.css';
 
 //Router
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 //Framer Motion
 import { motion } from 'framer-motion';
@@ -14,8 +14,8 @@ import {
   colorBlockVariants,
   svgVariantsTitle,
   svgVariantsSubTitle,
-  svgVariantsArrow,
-  arrowPathVariants,
+  // svgVariantsArrow,
+  // arrowPathVariants,
 } from '../framerMotionVariants/framerMotionVariants';
 
 //Background changing variable
