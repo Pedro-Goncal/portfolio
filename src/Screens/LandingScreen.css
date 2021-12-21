@@ -68,7 +68,7 @@
 	justify-content: center;
 	height: 100%;  /*100vh*/
 	letter-spacing: 1px;
-
+  background-image: url("../assets/giphy.gif");
   color: transparent;
   background-clip: text;
   -moz-background-clip: text;
@@ -80,19 +80,19 @@
 }
 
 .--backgroundImageChoise1{
-  background-image: url(https://media1.giphy.com/media/cQhmYBg9qPaLYdqajA/giphy.gif?cid=790b761121b80ca51f943a149de5c8e0a65eb5b9ebc6c0df&rid=giphy.gif&ct=g);
+  
   background-size: cover; /*cover*/
   background-position: top;
 }
 
 .--backgroundImageChoise2{
-  background-image: url(https://media1.giphy.com/media/cQhmYBg9qPaLYdqajA/giphy.gif?cid=790b761121b80ca51f943a149de5c8e0a65eb5b9ebc6c0df&rid=giphy.gif&ct=g);
+  
   background-size: contain; /*cover*/
   background-position: top;
 }
 
 .--backgroundImageChoise3{
-  background-image: url(https://media1.giphy.com/media/cQhmYBg9qPaLYdqajA/giphy.gif?cid=790b761121b80ca51f943a149de5c8e0a65eb5b9ebc6c0df&rid=giphy.gif&ct=g);
+  
   background-size: cover; /*cover*/
   background-position: center;
 }
