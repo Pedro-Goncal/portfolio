@@ -1,0 +1,68 @@
+a {
+   text-decoration:none;
+   color: #8a8a8a;
+}
+
+a:hover {
+   color: rgb(255, 255, 255);
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ff0000; /* Change the color */
+  font-weight: bold; /*If you want it to be bold*/
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  padding-bottom: 0.5rem  
+}
+
+.site__header,
+.site__nav-list {
+  display: flex;
+  height: 100vh;
+}
+
+.site__header > * {
+   flex: 1 1 auto;
+ }
+
+ .site__nav-list {
+   justify-content: space-around;
+   font-size: 1.5rem
+ }
+
+ .site__header {
+   height: 100%;
+   padding: 1.25rem 0;
+   position: fixed;
+   right: 1.5rem;
+   top: 0;
+   writing-mode: vertical-rl;
+ }
+
+
+ .container {
+   position: relative;
+ }
+
+ @media (max-width: 1055px ) {
+
+  .navContainer {
+    position: relative;
+  }
+
+  .site__header {
+    display: none;
+  }
+
+  .bottomNav__container {
+    position: absolute;
+    width: 100vw;
+    height: 20px;
+    background-color: red ;
+  }
+ }
+

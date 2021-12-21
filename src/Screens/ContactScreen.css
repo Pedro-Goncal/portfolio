@@ -1,0 +1,203 @@
+.contactScreen {
+   height: 85vh;
+   background-image: url('../assets/backgroundContact.jpg');
+   background-size: cover;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+
+}
+
+/*===================================*/
+/*TITLE DIV
+/*===================================*/
+
+.contactScreen__title {
+   padding: 1rem;
+   text-align: start;
+   width: 8%;
+   height: 100%;
+}
+
+
+.popout3 {
+   font-family: Futura, sans-serif;
+   font-weight: 900;
+   font-size: 32px;
+   padding: 40px;
+ }
+ @-webkit-keyframes ani3 {
+   0% {
+     transform: translate3d(0, 0, 0);
+     text-shadow: 0em 0em 0 rgb(44, 228, 16);
+     color: black;
+   }
+   30% {
+     transform: translate3d(0, 0, 0);
+     text-shadow: 0em 0em 0 rgb(44, 228, 16);
+     color: black;
+   }
+   70% {
+     transform: translate3d(0.08em, -0.08em, 0);
+     text-shadow: -0.08em 0.08em rgb(44, 228, 16);
+     color: black;
+   }
+   100% {
+     transform: translate3d(0.08em, -0.08em, 0);
+     text-shadow: -0.08em 0.08em rgb(44, 228, 16);
+     color: black;
+   }
+ }
+ @keyframes ani3 {
+   0% {
+     transform: translate3d(0, 0, 0);
+     text-shadow: 0em 0em 0 rgb(44, 228, 16);
+     color: black;
+   }
+   30% {
+     transform: translate3d(0, 0, 0);
+     text-shadow: 0em 0em 0 rgb(44, 228, 16);
+     color: black;
+   }
+   70% {
+     transform: translate3d(0.08em, -0.08em, 0);
+     text-shadow: -0.08em 0.08em rgb(44, 228, 16);
+     color: black;
+   }
+   100% {
+     transform: translate3d(0.08em, -0.08em, 0);
+     text-shadow: -0.08em 0.08em rgb(44, 228, 16);
+     color: black;
+   }
+ }
+ .popout3 .span3 {
+   position: relative;
+   display: inline-block;
+   -webkit-animation: ani3 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+           animation: ani3 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+ }
+ .popout3 .span3:nth-last-child(1n) {
+   -webkit-animation-delay: -0.1666666667s;
+           animation-delay: -0.1666666667s;
+ }
+ .popout3 .span3:nth-last-child(2n) {
+   -webkit-animation-delay: -0.3333333333s;
+           animation-delay: -0.3333333333s;
+ }
+ .popout3 .span3:nth-last-child(3n) {
+   -webkit-animation-delay: -0.5s;
+           animation-delay: -0.5s;
+ }
+/*===================================*/
+
+
+
+
+.contactScreen__left {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+
+.contactScreen__right {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   margin-right: 5rem;
+}
+
+.contactScreen__contactContainer {
+   background-color: rgb(255, 255, 255);
+   box-shadow: 4px 4px 3px 0px;
+   width: 80%;
+   /* height: 50%; */
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+
+.text-center{
+	color:rgb(0, 0, 0);	
+	text-transform:uppercase;
+  font-weight: 900;
+    font-size: 23px;
+    margin: -80px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+
+textarea {
+   width: 100%;
+   height: 130px
+}
+
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+   background-color: rgba(0, 0, 0, 0.89);
+	border-radius:3px;
+	padding:70px 100px;
+}
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:rgb(0, 0, 0);	
+	transition: all 0.5s ease-in-out;
+}
+.input-container input,
+.input-container textarea{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:rgb(59, 59, 59);
+}
+.input-container input:focus,
+.input-container textarea:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid rgb(44, 228, 16);	
+}
+.btn{
+	color:#fff;	
+   background-color:rgb(18, 138, 0);
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:50px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+
+.btn:hover {
+	background-color:rgb(44, 228, 16);
+
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label,
+.input-container textarea:focus ~ label,
+.input-container textarea:valid ~ label
+{
+	top:-12px;
+	font-size:12px;
+	
+}
